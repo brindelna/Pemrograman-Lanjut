@@ -1,4 +1,4 @@
-package Praktikum_Pemrograman_Lanjut.LK08_PerpustakaanSMPGUI;
+package Praktikum_Pemrograman_Lanjut.LK08_GUI2PerpustakaanSMP;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -474,6 +474,7 @@ public class GUI2PerpustakaanSMP extends JFrame {
 
     private void dialogKembaliBuku() {
         String trx = JOptionPane.showInputDialog("Masukkan Kode TRX:");
+
         if(trx != null && !trx.trim().isEmpty() && prosesPengembalian(trx)) {
             refreshTabelLaporan(); JOptionPane.showMessageDialog(this, "Pengembalian Buku Sukses!");
         } else if (trx != null) { JOptionPane.showMessageDialog(this, "Kode TRX tidak ditemukan atau sudah dikembalikan!"); }

@@ -1,6 +1,6 @@
 package Praktikum_Pemrograman_Lanjut.LK06_PerpustakaanSMP;
 
-public class Pegawai extends Pengguna {
+public class Pegawai extends Orang {
     private String password;
     private String tanggalLahir;
 

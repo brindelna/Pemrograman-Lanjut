@@ -1,25 +1,18 @@
 package Praktikum_Pemrograman_Lanjut.LK06_PerpustakaanSMP;
 
-public class Siswa {
-    private String nis;
-    private String nama;
+public class Siswa extends Pengguna {
     private String alamat;
 
     public Siswa(String nis, String nama, String alamat) {
-        this.nis = nis;
-        this.nama = nama;
+        super(nis, nama);
         this.alamat = alamat;
     }
 
-    public void setNis(String nis) { this.nis = nis; }
-    public void setNama(String nama) { this.nama = nama; }
+    public String getAlamat() { return alamat; }
     public void setAlamat(String alamat) { this.alamat = alamat; }
 
-    public String getNis() { return nis; }
-    public String getNama() { return nama; }
-    public String getAlamat() { return alamat; }
-
+    @Override
     public String toCSV() {
-        return nis + "," + nama + "," + alamat;
+        return id + "," + nama + "," + alamat;
     }
 }

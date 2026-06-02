@@ -11,13 +11,12 @@ public class Buku {
         this.jenis = jenis;
     }
 
-    public void setKodeBuku(String kodeBuku) { this.kodeBuku = kodeBuku; }
-    public void setJudul(String judul) { this.judul = judul; }
-    public void setJenis(String jenis) { this.jenis = jenis; }
-
     public String getKodeBuku() { return kodeBuku; }
+    public void setKodeBuku(String kodeBuku) { this.kodeBuku = kodeBuku; }
     public String getJudul() { return judul; }
+    public void setJudul(String judul) { this.judul = judul; }
     public String getJenis() { return jenis; }
+    public void setJenis(String jenis) { this.jenis = jenis; }
 
     public String toCSV() {
         return kodeBuku + "," + judul + "," + jenis;

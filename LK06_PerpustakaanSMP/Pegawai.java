@@ -1,23 +1,22 @@
 package Praktikum_Pemrograman_Lanjut.LK06_PerpustakaanSMP;
 
-public class Pegawai {
-    private String nip;
-    private String nama;
+public class Pegawai extends Pengguna {
     private String password;
-    private String tglLahir;
+    private String tanggalLahir;
 
-    public Pegawai(String nip, String nama, String password, String tglLahir) {
-        this.nip = nip;
-        this.nama = nama;
+    public Pegawai(String nip, String nama, String password, String tanggalLahir) {
+        super(nip, nama);
         this.password = password;
-        this.tglLahir = tglLahir;
+        this.tanggalLahir = tanggalLahir;
     }
 
-    public String getNama() {
-        return nama;
-    }
+    public String getPassword() { return password; }
+    public void setPassword(String password) { this.password = password; }
+    public String getTanggalLahir() { return tanggalLahir; }
+    public void setTanggalLahir(String tanggalLahir) { this.tanggalLahir = tanggalLahir; }
 
+    @Override
     public String toCSV() {
-        return nip + "," + nama + "," + password + "," + tglLahir;
+        return id + "," + nama + "," + password + "," + tanggalLahir;
     }
 }

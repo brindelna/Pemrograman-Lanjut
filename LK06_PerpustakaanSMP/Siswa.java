@@ -1,6 +1,6 @@
 package Praktikum_Pemrograman_Lanjut.LK06_PerpustakaanSMP;
 
-public class Siswa extends Pengguna {
+public class Siswa extends Orang {
     private String alamat;
 
     public Siswa(String nis, String nama, String alamat) {
